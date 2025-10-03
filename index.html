@@ -3,24 +3,28 @@
 <head>
     <title>تنبيه الأمان</title>
     <style>
-        /* هذا الكود يضمن أن الصورة تملأ الشاشة بالكامل وتتوسطها */
+        /* هذا الكود يضمن أن الصورة تملأ الشاشة وتتوسطها */
         body {
             margin: 0;
             padding: 0;
             background-color: #f0f0f0; /* لون خلفية فاتح */
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            justify-content: center; /* توسيط أفقي */
+            align-items: center; /* توسيط عمودي */
+            min-height: 100vh; /* جعل الصفحة بارتفاع كامل الشاشة */
+            text-align: center; /* ضمان توسيط محتوى الصورة */
         }
         img {
-            max-width: 90%; /* تجعل الصورة مناسبة لحجم الشاشة */
+            /* تعديلات لضمان الحجم الكبير */
+            max-width: 90%; /* الصورة تأخذ 90% كحد أقصى من عرض الشاشة */
             height: auto;
-            border: 5px solid #cc0000; /* إضافة إطار أحمر للتنبيه */
+            width: 80vh; /* جعل عرض الصورة 80% من ارتفاع الشاشة لضمان أن تكون كبيرة جداً */
+            /* إلغاء الإطار الأحمر الذي كان ظاهراً في الصورة المرسلة */
+            border: none;
         }
     </style>
 </head>
 <body>
-    <img src="fake_alert.png" alt="تحذير: هذا الموقع مزيف">
+    <img src="fake_alert.jpg">
 </body>
 </html>
