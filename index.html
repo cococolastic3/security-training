@@ -3,23 +3,22 @@
 <head>
     <title>تنبيه الأمان</title>
     <style>
-        /* هذا الكود يضمن أن الصورة تملأ الشاشة وتتوسطها */
         body {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0; /* لون خلفية فاتح */
+            /* تغيير لون الخلفية لمطابقة الصورة */
+            background-color: #1a0511; /* لون أساسي بنفسجي داكن جداً */
+            background-image: radial-gradient(circle at center, rgba(255, 0, 100, 0.1) 0%, rgba(0, 0, 0, 0) 70%); /* تأثير توهج خفيف */
             display: flex;
-            justify-content: center; /* توسيط أفقي */
-            align-items: center; /* توسيط عمودي */
-            min-height: 100vh; /* جعل الصفحة بارتفاع كامل الشاشة */
-            text-align: center; /* ضمان توسيط محتوى الصورة */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
         }
         img {
-            /* تعديلات لضمان الحجم الكبير */
-            max-width: 90%; /* الصورة تأخذ 90% كحد أقصى من عرض الشاشة */
+            max-width: 90%;
             height: auto;
-            width: 80vh; /* جعل عرض الصورة 80% من ارتفاع الشاشة لضمان أن تكون كبيرة جداً */
-            /* إلغاء الإطار الأحمر الذي كان ظاهراً في الصورة المرسلة */
+            width: 80vh; 
             border: none;
         }
     </style>
